@@ -1,0 +1,32 @@
+GET http://localhost:3000/listings
+
+###
+
+GET http://localhost:3000/listings/15
+
+
+###
+
+POST http://localhost:3000/listings
+Content-Type: application/json 
+
+{
+    "title" : "Walk Dog",
+    "description" : "Walk the old dog",
+    "pay" : 100,
+    "duration" : 45,
+    "creator" : "Albert"
+}
+
+###
+DELETE http://localhost:3000/listings/6698258a2513d0bb31d43793
+
+
+###
+PATCH http://localhost:3000/listings/6698260d26ea99563d1be4be
+Content-Type: application/json
+
+{
+    "title" : "new title",
+    "description" : "New description"
+}
