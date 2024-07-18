@@ -4,7 +4,8 @@ const express = require('express')
 const app = express()
 const mongoose = require('mongoose')
 
-mongoose.connect(process.env.DATABASE_URL)
+// mongoose.connect(process.env.DATABASE_URL)
+mongoose.connect("mongodb+srv://wsaulnier1004:qxhVpPyBdggsIBLi@cluster0.azdppcx.mongodb.net/JobsDB?retryWrites=true&w=majority&appName=Cluster0")
 
 const db = mongoose.connection
 db.on('error', (error) => console.error(error))
