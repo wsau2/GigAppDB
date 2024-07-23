@@ -16,4 +16,4 @@ app.use(express.json())
 const listingsRouter = require('./routes/listings')
 app.use('/api/v1/listings', listingsRouter)
 
-app.listen(5173, () => console.log("Server started"))
+app.listen(8062, () => console.log("Server started on port 8062"))
