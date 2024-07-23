@@ -14,6 +14,6 @@ db.once('open', (error) => console.log("Connected to Database"))
 app.use(express.json())
 
 const listingsRouter = require('./routes/listings')
-app.use('/listings', listingsRouter)
+app.use('/api/v1/listings', listingsRouter)
 
-app.listen(3000, () => console.log("Server started"))
+app.listen(5173, () => console.log("Server started"))

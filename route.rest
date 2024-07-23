@@ -1,4 +1,4 @@
-GET http://localhost:3000/listings
+GET http://localhost:5173/listings
 
 ###
 
