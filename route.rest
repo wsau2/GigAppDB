@@ -1,21 +1,21 @@
-GET http://localhost:5173/listings
+GET http://localhost:8062/api/v1/listings
 
 ###
 
-GET http://localhost:3000/listings/15
+GET http://localhost:3000/api/v1/listings/15
 
 
 ###
 
-POST http://localhost:3000/listings
+POST http://localhost:8062/listings
 Content-Type: application/json 
 
 {
-    "title" : "Walk Dog",
-    "description" : "Walk the old dog",
+    "title" : "Job1",
+    "description" : "desc",
     "pay" : 100,
     "duration" : 45,
-    "creator" : "Albert"
+    "creator" : "Creator1"
 }
 
 ###
@@ -24,6 +24,33 @@ DELETE http://localhost:3000/listings/6698258a2513d0bb31d43793
 
 ###
 PATCH http://localhost:3000/listings/6698260d26ea99563d1be4be
+Content-Type: application/json
+
+{
+    "title" : "new title",
+    "description" : "New description"
+}
+
+
+### Users
+GET http://localhost:8062/api/v1/users
+
+###
+GET http://localhost:3000/api/v1/users/66aa86c48a1ee6b043d6e3cf
+
+###
+POST http://localhost:8062/api/v1/users
+Content-Type: application/json 
+
+{
+    "userID" : "userID1234"
+}
+
+###
+DELETE http://localhost:3000/api/v1/users/66aa86c48a1ee6b043d6e3cf
+
+###
+PATCH http://localhost:3000/api/v1/users/6698260d26ea99563d1be4be
 Content-Type: application/json
 
 {

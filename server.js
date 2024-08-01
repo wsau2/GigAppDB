@@ -19,4 +19,7 @@ app.use(cors())
 const listingsRouter = require('./routes/listings')
 app.use('/api/v1/listings', listingsRouter)
 
+const usersRouter = require('./routes/users')
+app.use('/api/v1/users', usersRouter)
+
 app.listen(8062, () => console.log("Server started on port 8062"))
