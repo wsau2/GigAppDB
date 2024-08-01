@@ -36,14 +36,19 @@ Content-Type: application/json
 GET http://localhost:8062/api/v1/users
 
 ###
-GET http://localhost:3000/api/v1/users/66aa86c48a1ee6b043d6e3cf
+GET http://localhost:8062/api/v1/users/66aa86c48a1ee6b043d6e3cf
 
 ###
 POST http://localhost:8062/api/v1/users
 Content-Type: application/json 
 
 {
-    "userID" : "userID1234"
+    "profilePicture" : "https://www.korosenai.es/wp-content/uploads/2021/01/ganyu-genshin-impact.jpg",
+    "userID" : "Ganyu",
+    "jobsAppliedTo" : [],
+    "jobsCreated" : [],
+    "reviews" : [],
+    "money" : 1200,
 }
 
 ###
