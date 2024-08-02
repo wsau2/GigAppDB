@@ -14,7 +14,7 @@ router.get("/", async (req, res) => {
  
 // Getting One
 router.get("/:id", getListing, (req, res) => {
-    res.send(res.listing.title)
+    res.send(res.listing)
 })
 
 // Creating One 

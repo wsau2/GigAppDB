@@ -15,7 +15,8 @@ const userSchema = new mongoose.Schema({
     }],
     money: {
         type: Number,
-        required: false
+        required: false,
+        default: 0,
     },
     reviews: [{
         userID: String,

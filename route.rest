@@ -2,17 +2,17 @@ GET http://localhost:8062/api/v1/listings
 
 ###
 
-GET http://localhost:3000/api/v1/listings/15
+GET http://localhost:8062/api/v1/listings/15
 
 
 ###
 
-POST http://localhost:8062/listings
+POST http://localhost:8062/api/v1/listings
 Content-Type: application/json 
 
 {
-    "title" : "Job1",
-    "description" : "desc",
+    "title" : "Llama",
+    "description" : "alpaca",
     "pay" : 100,
     "duration" : 45,
     "creator" : "Creator1"
@@ -32,23 +32,23 @@ Content-Type: application/json
 }
 
 
-### Users
+### Users ///////////////////////////////////////////
 GET http://localhost:8062/api/v1/users
 
 ###
-GET http://localhost:8062/api/v1/users/66aa86c48a1ee6b043d6e3cf
+GET http://localhost:8062/api/v1/users/66ac21268f7019593fe0ad2f
 
 ###
 POST http://localhost:8062/api/v1/users
 Content-Type: application/json 
 
 {
-    "profilePicture" : "https://www.korosenai.es/wp-content/uploads/2021/01/ganyu-genshin-impact.jpg",
-    "userID" : "Ganyu",
+    "profilePicture" : "https://www.hollywoodreporter.com/wp-content/uploads/2022/04/12fea_mads_splash-2022.jpg?w=2000&h=1126&crop=1",
+    "userID" : "Madds",
     "jobsAppliedTo" : [],
     "jobsCreated" : [],
     "reviews" : [],
-    "money" : 1200,
+    "money" : 3000
 }
 
 ###
