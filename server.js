@@ -22,4 +22,7 @@ app.use('/api/v1/listings', listingsRouter)
 const usersRouter = require('./routes/users')
 app.use('/api/v1/users', usersRouter)
 
+const applicationsRouter = require('./routes/applications')
+app.use('/api/v1/applications', applicationsRouter)
+
 app.listen(8062, () => console.log("Server started on port 8062"))

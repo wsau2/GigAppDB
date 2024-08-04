@@ -62,3 +62,25 @@ Content-Type: application/json
     "title" : "new title",
     "description" : "New description"
 }
+
+############ APPLICATIONS ####################################
+GET http://localhost:8062/api/v1/applications
+
+###
+GET http://localhost:8062/api/v1/applications/66afd48d7e42ab249b8be46e
+
+###
+POST http://localhost:8062/api/v1/applications
+Content-Type: application/json 
+
+{
+    "applicationID" : 123,
+    "listingID" : 345,
+    "userID" : "CreatorWill",
+    "firstName" : "Joe",
+    "lastName" : "Biden",
+    "email" : "email@gmail.com",
+    "address" : "12 White House Lane",
+    "resume" : "[insert file]",
+    "hispanicOrLatino": false
+}
